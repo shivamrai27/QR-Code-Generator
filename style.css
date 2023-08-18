@@ -3,3 +3,95 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
+
+:root {
+    --primary: #47185c;
+    --primary-dark: #14001d;
+}
+
+html {
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: var(--primary);
+}
+
+.container {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+
+.box {
+    /* height: 400px; */
+    width: 400px;
+    background-color: #fff;
+    padding: 1.3rem;
+}
+
+.upper h1 {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 33px;
+}
+
+.upper,
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form {
+    margin-top: 10px;
+    gap: 10px;
+}
+
+form input {
+    width: 100%;
+    padding: 10px;
+    height: 40px;
+    font-size: medium;
+}
+
+form input:focus-visible {
+    border: 1px solid var(--primary);
+    outline: 1px solid var(--primary);
+}
+
+form button {
+    width: 100%;
+    padding: 10px;
+    height: 40px;
+    font-size: medium;
+    background-color: var(--primary);
+    color: white;
+    border: none;
+    opacity: 0.9;
+}
+
+form button:hover {
+    cursor: pointer;
+}
+
+form button:active {
+    opacity: 1;
+}
+
+.qr_container {
+    border: 2px solid var(--primary);
+    display: flex;
+    justify-content: center;
+    display: none;
+}
+
+.qr_container.show {
+    display: flex;
+}
+
+.qr_container img {
+    height: 150px;
+}
