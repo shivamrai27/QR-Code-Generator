@@ -2,11 +2,12 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>QR Code Generator</title>
-    <link rel="stylesheet" href="./style.css">
-
+    <link rel="stylesheet" href="style.css" />
+    <script src="./script.js" defer></script>
 </head>
 
 <body>
@@ -18,18 +19,14 @@
             </section>
 
             <form id="qrForm">
-                <input type="text" name="qrText" id="qrInputText" placeholder="Enter URL">
-                <button type="submit">Generat QR Code</button>
+                <input id="qrInputText" type="text" name="qrText" placeholder="Enter Text" />
+                <button id="generateBtn" type="submit">Generate QR Code</button>
             </form>
-
-            <section id="qrcontainer" class="qr_container">
-                <img src="./qr.webp" id="qrImage" alt="QR Code">
+            <section id="qrContainer" class="qr_container">
+                <img id="qrImage" src="./qr.webp" alt="QR Code" />
             </section>
         </div>
     </div>
-
-
-    <script src="./script.js"></script>
 </body>
 
 </html>
