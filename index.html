@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>QR Code Generator</title>
     <link rel="stylesheet" href="./style.css">
+
 </head>
 
 <body>
@@ -16,13 +17,13 @@
                 <p>Paste text to create QR Code</p>
             </section>
 
-            <form>
-                <input type="text" name="qrText" placeholder="Enter URL">
+            <form id="qrForm">
+                <input type="text" name="qrText" id="qrInputText" placeholder="Enter URL">
                 <button type="submit">Generat QR Code</button>
             </form>
 
-            <section class="qr_container">
-                <img src="./qr.webp" alt="" alt="QR Code">
+            <section id="qrcontainer" class="qr_container">
+                <img src="./qr.webp" id="qrImage" alt="QR Code">
             </section>
         </div>
     </div>
